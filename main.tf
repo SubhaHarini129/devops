@@ -21,8 +21,8 @@ provider "azurerm" {
   subscription_id = "320fb61f-2500-4465-9cb2-ca21d99aa5b2"
 }
 module "storage" {
-source = "./modules/storageaccount"
-resource_group_name = "rg-simple-tf"
-location = "eastus"
-storage_account_name = "simplestoragesubha001"
+  source               = "./modules/storage-account"
+  resource_group_name  = "rg-simple-tf"
+  location             = "eastus"
+  storage_account_name = "simplestoragesubha001"
 }
